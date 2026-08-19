@@ -1,34 +1,43 @@
-# StoryMap Spanish Project
+# Spanish StoryMap — Manuel Fernández
 
-Este proyecto es un StoryMapJS que explora el proceso digital de descubrimiento histórico usando el caso de Manuel Fernández del siglo XVIII.
+Interactive [StoryMapJS](https://storymap.knightlab.com/) project (written in elementary Spanish) that follows one 18th-century case from **primary source** to **structured data** to **mapped narrative**.
 
-## Estructura del Proyecto
+This is a digital-history communication piece: the code is HTML + JSON; the work is research design and storytelling.
 
-- `index.html` - Archivo principal del StoryMap
-- `published.json` - Datos publicados del StoryMap
-- `draft.json` - Borrador del StoryMap
-- `_images/` - Carpeta con todas las imágenes del proyecto
+## Live map
 
-## Para Publicar en GitHub
+Open [`index.html`](index.html) in a browser, or use GitHub Pages if it is enabled on this repo.
 
-Después de crear un repositorio en GitHub, ejecuta estos comandos:
+## What the story covers
+
+1. **La transcripción digital** — turning a historical document into usable text  
+2. **Organizar los datos** — structuring people, places, and events  
+3. **Contar la historia con StoryMapJS** — walking a reader through locations on a map  
+
+## Files
+
+| File | Role |
+| --- | --- |
+| `index.html` | StoryMap viewer |
+| `published.json` | Published slide / location data |
+| `draft.json` | Working draft of the same data |
+| `_images/` | Images used in the map |
+| `draft.html` | Draft viewer |
+
+## How to view locally
 
 ```bash
-git remote add origin https://github.com/TU_USUARIO/TU_REPOSITORIO.git
-git branch -M main
-git push -u origin main
+git clone https://github.com/vivic0107/Spanish-storyMap.git
+open index.html
 ```
 
-Reemplaza `TU_USUARIO` y `TU_REPOSITORIO` con tu nombre de usuario de GitHub y el nombre del repositorio.
+No build step. If slides do not load from `file://`, serve the folder:
 
-## Requisitos del Proyecto
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-- Introducción clara del proyecto
-- Tres secciones bien desarrolladas:
-  1. La Transcripción Digital
-  2. Organizar los Datos
-  3. Contar la Historia con StoryMapJS
-- Uso de fuentes primarias y secundarias
-- Video complementario de 5-7 minutos
-- Todo el contenido está en español elemental
+## Skills this demonstrates
 
+Research communication · narrative structure · JSON content modeling · bilingual (Spanish) writing · Knight Lab StoryMap
